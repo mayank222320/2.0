@@ -31,36 +31,36 @@ const features = [
 
 export default function VisionMissionSection() {
   return (
-    <section className="relative py-32 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+    <section className="relative space-section bg-white overflow-hidden">
 
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-[120px]"></div>
+        <div className="absolute inset-0 grid-pattern opacity-30"></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-50 rounded-full blur-[150px]"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container-custom relative z-10">
 
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-20">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 mb-6">
-              <Cpu className="w-4 h-4 text-blue-400" />
-              <span className="text-xs font-medium text-white/80 tracking-wide">Core Capabilities</span>
+            <div className="badge-primary mb-6">
+              <Cpu className="w-4 h-4" />
+              <span className="text-xs font-semibold tracking-wide">Core Capabilities</span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-6">
+            <h2 className="text-headline text-slate-900 mb-6">
               Intelligent Systems for
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-400">
+              <span className="text-gradient-blue">
                 Critical Operations
               </span>
             </h2>
-            <p className="text-lg text-slate-400 leading-relaxed">
+            <p className="text-body text-slate-600">
               Purpose-built technology solutions designed for government agencies and enterprises managing complex, mission-critical operations.
             </p>
           </motion.div>
@@ -76,50 +76,44 @@ export default function VisionMissionSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105"
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-strong transition-smooth hover-lift border border-slate-100"
               >
-                {/* Gradient Glow on Hover */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-
                 {/* Icon */}
-                <div className={`relative inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br ${feature.gradient} mb-6 shadow-lg`}>
+                <div className={`relative inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.gradient} mb-6 shadow-medium`}>
                   <Icon className="w-7 h-7 text-white" />
                 </div>
 
                 {/* Content */}
-                <h3 className="relative text-xl font-bold text-white mb-3 leading-tight">
+                <h3 className="relative text-xl font-bold text-slate-900 mb-3 leading-tight group-hover:text-blue-600 transition-colors">
                   {feature.title}
                 </h3>
 
-                <p className="relative text-slate-400 leading-relaxed text-[15px]">
+                <p className="relative text-slate-600 leading-relaxed text-base">
                   {feature.description}
                 </p>
-
-                {/* Hover Effect Line */}
-                <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${feature.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-b-2xl`}></div>
               </motion.div>
             );
           })}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Stats Bar */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-          className="text-center mt-16"
+          transition={{ delay: 0.6 }}
+          className="text-center mt-20"
         >
-          <div className="inline-flex items-center gap-8 px-8 py-6 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10">
+          <div className="inline-flex flex-wrap items-center gap-x-12 gap-y-6 px-10 py-8 bg-slate-50 rounded-3xl border border-slate-200">
             {[
               { value: "20+", label: "Government Partners" },
               { value: "99.9%", label: "System Uptime" },
               { value: "24/7", label: "Support Available" }
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-                <div className="text-xs text-slate-400 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-4xl font-bold text-slate-900 mb-1">{stat.value}</div>
+                <div className="text-sm text-slate-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
