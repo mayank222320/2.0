@@ -1,51 +1,76 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ArrowRight, Zap, Target } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function CallToActionSection() {
   return (
-    <section className="relative py-28 bg-brand-900 overflow-hidden isolate">
-       <div className="absolute inset-0 bg-brand-950 overflow-hidden -z-10">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-800/30 rounded-full blur-[200px] animate-pulse-slow"></div>
-       </div>
+    <section className="relative py-32 bg-slate-900 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:48px_48px]"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"></div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-           initial={{ opacity: 0, y: 30 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 0.8 }}
-           className="max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto text-center"
         >
-          <div className="mx-auto flex w-16 h-16 rounded-full bg-brand-800 justify-center items-center mb-6 border border-brand-700 shadow-xl">
-             <Target className="w-8 h-8 text-accent-400" />
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white text-sm font-semibold mb-8">
+            <div className="w-2 h-2 rounded-full bg-emerald-400"></div>
+            Let's Build Together
           </div>
 
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-8 tracking-tight leading-[1.1]">
-             Ready to Modernize Your Operations?
+          {/* Heading */}
+          <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 tracking-tight leading-[1.1]">
+            Ready to Transform Your<br />
+            <span className="text-slate-400">Operations?</span>
           </h2>
-          
-          <p className="text-lg lg:text-xl text-brand-200/80 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-             Join the forward-thinking organizations using EyeQlytics for smarter, faster, and more secure public infrastructure.
+
+          {/* Description */}
+          <p className="text-lg lg:text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Partner with us to build intelligent, scalable systems that drive operational excellence and create lasting impact.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               to="/contact"
-              className="group relative inline-flex items-center justify-center px-8 py-4 bg-white text-brand-900 font-bold rounded-xl shadow-2xl hover:bg-brand-50 hover:shadow-white/20 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+              className="group inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              <span className="relative z-10 flex items-center">
-                Get Started Now <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </span>
+              Start a Conversation
+              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
-            
+
             <Link
               to="/products"
-              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-white/20 text-white font-semibold rounded-xl hover:bg-white/5 hover:border-white/40 transition-colors duration-300 backdrop-blur-sm"
+              className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/20 text-white font-semibold rounded-xl hover:bg-white/5 hover:border-white/30 transition-all duration-300"
             >
-               View Solutions
+              Explore Solutions
             </Link>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-16 pt-12 border-t border-white/10">
+            <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+              <div>
+                <div className="text-3xl font-bold text-white mb-2">20+</div>
+                <div className="text-sm text-slate-400">Government Partners</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-white mb-2">4.8/5</div>
+                <div className="text-sm text-slate-400">Client Satisfaction</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-white mb-2">99.9%</div>
+                <div className="text-sm text-slate-400">System Uptime</div>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
