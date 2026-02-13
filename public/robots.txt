@@ -1,0 +1,40 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://eyeqlytics.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Block access to admin or sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Allow access to important resources
+Allow: /favicon.ico
+Allow: /EyeQlytics*.png
+Allow: /*.css$
+Allow: /*.js$
+Allow: /sitemap.xml
+Allow: /robots.txt

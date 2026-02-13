@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "copmap-6060e"
+  },
+  "targets": {
+    "copmap-6060e": {
+      "hosting": {
+        "eyeqlytics": [
+          "eyeqlytics"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

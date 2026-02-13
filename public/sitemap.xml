@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://eyeqlytics.com/</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>EyeQlytics Technologies - Indian GovTech Solutions</image:title>
+      <image:caption>EyeQlytics Technologies logo - Leading GovTech company in India</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/Home-il.jpg</image:loc>
+      <image:title>EyeQlytics Technologies Hero Image</image:title>
+      <image:caption>Government technology solutions and B2B innovation</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://eyeqlytics.com/about</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>About EyeQlytics Technologies Team</image:title>
+      <image:caption>Learn about the team behind India's most scalable public sector tech tools</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Products Main Page -->
+  <url>
+    <loc>https://eyeqlytics.com/products</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>EyeQlytics Technologies Products</image:title>
+      <image:caption>Intelligent software products for real-world problems</image:caption>
+    </image:image>
+  </url>
+
+  <!-- CopMap Product Page -->
+  <url>
+    <loc>https://eyeqlytics.com/products/copmap</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/Home-logo.png</image:loc>
+      <image:title>CopMap Police Command Center Dashboard</image:title>
+      <image:caption>Revolutionary police command and control solution with live officer tracking and real-time deployment management</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://eyeqlytics.com/services</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>EyeQlytics Technologies Services</image:title>
+      <image:caption>Custom software development and GovTech solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Careers Page -->
+  <url>
+    <loc>https://eyeqlytics.com/careers</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>Careers at EyeQlytics Technologies</image:title>
+      <image:caption>Join our team building innovative GovTech solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Clients Page -->
+  <url>
+    <loc>https://eyeqlytics.com/clients</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>EyeQlytics Technologies Clients</image:title>
+      <image:caption>Trusted by government agencies and enterprises across India</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://eyeqlytics.com/contact</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>Contact EyeQlytics Technologies</image:title>
+      <image:caption>Get in touch with our GovTech experts</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog Page -->
+  <url>
+    <loc>https://eyeqlytics.com/blog</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://eyeqlytics.com/favicon.png</image:loc>
+      <image:title>EyeQlytics Technologies Blog</image:title>
+      <image:caption>Insights on GovTech, innovation, and public sector technology</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Legal Page -->
+  <url>
+    <loc>https://eyeqlytics.com/legal</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
